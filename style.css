@@ -94,3 +94,14 @@ body {
     border-color: white;
     transform: translateY(-3px); /* Leggero salto verso l'alto */
 }
+
+.profile-pic:hover{
+    border-color: white;
+    transform: scale(1.05); /* Leggero ingrandimento */
+    transition: all 0.3s ease;
+}
+
+.main-title:hover {
+    transform: scale(1.05); /* Leggero ingrandimento */
+    transition: all 0.3s ease;
+}
