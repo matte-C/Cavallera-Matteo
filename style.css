@@ -2,12 +2,12 @@ body {
     background-color: #121212;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; /* Fondamentale per togliere i bordi bianchi */
+    margin: 0;
+    overflow-x: hidden; /* Impedisce lo scorrimento orizzontale fastidioso */
 }
-
 /* Modifica qui: la sezione hero occupa il 100% della vista */
 .hero {
-    height: 100vh; 
+    height: calc(100vh - 70px); /* 100% dello schermo meno l'altezza della navbar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    min-height: 100vh; /* Così anche questa sezione è bella spaziosa */
 }
 
 /* Responsive */
@@ -141,4 +140,17 @@ body {
 /* Effetto al passaggio del mouse */
 .nav-links a:hover {
   color: #00aaff;
+}
+
+.social-icon {
+    width: 40px;  /* Puoi cambiare la grandezza come preferisci */
+    height: 40px;
+    object-fit: contain; /* Mantiene le proporzioni senza schiacciare l'immagine */
+    vertical-align: middle;
+}
+
+/* Opzionale: per distanziare i link tra loro */
+.social-link {
+    text-decoration: none;
+    margin-right: 15px;
 }
